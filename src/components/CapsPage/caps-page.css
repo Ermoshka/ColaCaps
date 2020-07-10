@@ -1,0 +1,37 @@
+.tabs {
+    /* border: 1px dashed red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+.tabs .tab {
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    color: purple;
+    border: 2px solid purple;
+}
+
+.tabs .tab.active {
+    background: purple;
+    color: white;
+}
+
+.caps {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .caps {
+    }
+}

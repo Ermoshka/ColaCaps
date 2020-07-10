@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a class="logo" href="">
+            <img 
+                src="cocacolalogo.png" 
+                height="40" width="90" alt="">
+        </a>
+        <a class="balance" href="">ermoshka: 10000</a>
+        <div class="burger" onclick="openBurger(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="links">
+            <a>Open Cap</a>
+            <a href="">Caps</a>
+            <a href="">Games</a>
+            <a href="">Shop</a>
+            <a href="">Add news</a>
+            <a href="">Add product</a>
+            <a href="">Add cap</a>
+            <a href="">Log out</a>
+            <a href="">Sign up</a>
+            <a href="">Log in</a>
+            <a href="">ermoshka: 10000</a>
+        </div>
+    </div>
+    <script>
+        
+        function openBurger(x) {
+            var t = document.getElementById("myTopnav");
+            if (t.className === "topnav") {
+                t.className += " responsive";
+            } else {
+                t.className = "topnav";
+            }
+            x.classList.toggle("change");
+            let links = x.nextElementSibling;
+            if(links.style.maxHeight) {
+                // links.style.display = "none"
+                links.style.maxHeight = null
+                // links.style.maxWidth = null
+            } else {
+                links.style.display = "block"
+                // links.style.maxWidth = links.scrollWidth + 'px'
+                links.style.maxHeight = links.scrollHeight + 'px'
+            }
+        }
+    </script>        
+</body>
+</html>

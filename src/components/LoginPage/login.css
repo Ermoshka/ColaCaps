@@ -1,0 +1,72 @@
+div.block {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow: 0 0 10px 3px rgb(224, 224, 224);
+}
+
+div.block .title {
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+div.block .title h2,
+div.block .title p,
+div.block .title hr {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+div.block .title p a {
+    text-decoration: none;
+    color: rgb(116, 116, 255)
+}
+
+div.block .title hr {
+    width: 20%;
+    float: left;
+    outline: none;
+    /* color: rgb(54, 54, 54); */
+    color: lightgreen;
+}
+
+div.block .form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.block .form .myinput {
+    width: 100%;
+}
+
+div.block button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    background: rgb(54, 184, 54);
+    padding: 7px 25px 7px 25px;
+    color: #fafafa;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+div.block button:hover {
+    background: rgb(71, 214, 71);
+}
+
+@media screen and (max-width: 500px) {
+    div.block {
+        width: 80%;
+    }
+}

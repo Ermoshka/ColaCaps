@@ -1,0 +1,58 @@
+.product {
+  border-radius: 10px;
+  background: #fafafa;
+  width: 210px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 3px rgb(224, 224, 224);
+}
+
+.product .image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 200px;
+}
+
+.product .imageContainer {
+  background: #fafafa;
+  width: 100%;
+}
+
+.product h2.title {
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+.product .body {
+  background: #fafafa;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.product .body h3,
+.product .body p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.product .body button {
+    border: none;
+    background: rgb(54, 184, 54);
+    padding: 7px 25px 7px 25px;
+    color: #fafafa;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.product .body button:hover {
+    background: rgb(71, 214, 71);
+}
+
+.product .body button[disabled="true"] {
+    background: red
+}

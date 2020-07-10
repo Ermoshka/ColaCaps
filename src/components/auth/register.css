@@ -1,0 +1,8 @@
+input:focus + label,
+input:not(:placeholder-shown) + label {
+margin-top: -2em;
+-webkit-transform-origin: left;
+        transform-origin: left;
+-webkit-transform: scale(0.7);
+        transform: scale(0.7);
+}

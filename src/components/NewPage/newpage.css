@@ -1,0 +1,12 @@
+main.wrapper.newpage {
+    height: 100%;
+}
+
+.newpage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background: white;
+    height: 100%;
+    padding: 10px;
+}

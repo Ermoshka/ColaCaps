@@ -1,0 +1,47 @@
+.form-group {
+    position: relative;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+.form-label {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    color: #999;
+    /* background-color: #fff; */
+    z-index: 10;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+}
+  
+.focused .form-label {
+    transform: translateY(-125%);
+    font-size: .90em;
+}
+
+.form-input {
+    /* position: relative; */
+    padding: 12px 0px 5px 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: 0 2px 0 0 #e5e5e5;
+    transition: box-shadow 150ms ease-out;
+}
+
+.error {
+    color: rgb(245, 50, 50);
+    font-size: 15px;
+}
+
+.form-input:focus {
+    box-shadow: 0 2px 0 0 black;
+}
+
+.form-input.filled {
+/* box-shadow: 0 2px 0 0 lightgreen; */
+    box-shadow: 0 2px 0 0 #e5e5e5;
+}

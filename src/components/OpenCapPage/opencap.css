@@ -1,0 +1,65 @@
+main.app-wrapper div.opencap {
+    width: 30%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fafafa;
+    box-shadow: 0 0 10px 3px rgb(224, 224, 224);
+}
+
+@media screen and (max-width: 600px) {
+    main.app-wrapper div.opencap {
+        width: 80%;
+    }
+}
+
+.opencap .title h2,
+.opencap .title p  {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.opencap .title hr {
+    width: 20%;
+    float: left;
+    outline: none;
+    /* color: rgb(54, 54, 54); */
+    color: lightgreen;
+}
+
+.opencap .body {
+    width: 100%;
+}
+
+.opencap .body .capcode {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.opencap .form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.opencap .form button {
+    margin-bottom: 15px;
+    border: none;
+    background: rgb(54, 184, 54);
+    padding: 7px 25px 7px 25px;
+    color: #fafafa;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.opencap .form button:hover {
+    background: rgb(71, 214, 71);
+}
